@@ -37,27 +37,6 @@ Client 端使用 Tkinter 建立完整操作介面，Server 端則採用 多執�
 6.	Server 將整理後的天氣資料封裝成回應封包（Type 7）
 
 7.	Client 接收資料後，更新 GUI 表格顯示天氣資訊
-┌──────────────┐
-│   Client   				  │
-│ (Tkinter UI) 				  │
-│             				  │
-│  Type 1 Login				  │
-│  Type 6 Req  				  │
-└──────┬───────┘
-
-       ▼
-┌─────────────────────┐
-│        Server      					    │
-│  Multi-thread TCP   						│
-│                   					    │
-│  Weather Handler    						│
-└──────┬──────────────┘
-       │ HTTP Request
-       ▼
-┌─────────────────────┐
-│  CWA Open Data API  						│
-│  (Weather Data)     						│
-└─────────────────────┘
 
 
 協定設計
