@@ -44,7 +44,7 @@ Client 端使用 Tkinter 建立完整操作介面，Server 端則採用 多執�
 │  Type 1 Login				  │
 │  Type 6 Req  				  │
 └──────┬───────┘
-       │ TCP Socket (JSON)
+
        ▼
 ┌─────────────────────┐
 │        Server      					    │
